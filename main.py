@@ -1,3 +1,4 @@
+from Caesar_art import LOGO
 
 def encode(msg1,shift_num1):
     ascii_values = []
@@ -19,6 +20,7 @@ def decode(msg2,shift_num2):
     characters = [chr(value) for value in ascii_values]
     print(''.join(characters))
 
+print(LOGO)
 again='yes'
 while(again=='yes'):
     # Get and validate user operation choice
@@ -27,7 +29,7 @@ while(again=='yes'):
         if user_input == 'encode' or user_input == 'decode':
             break
         else:
-            print("Invalid input. Please type 'encode' or 'decode'!!!")
+            print("Invalid input. Please type 'encode' or 'decode'!!!\n")
 
     # Process based on validated choice
     if user_input == 'encode':
@@ -42,7 +44,7 @@ while(again=='yes'):
 
     # Get and validate user's choice to continue
     while True:
-        again = input("Type 'yes' if you want to go again. Otherwise type 'no': ").lower()
+        again = input("\nType 'yes' if you want to go again. Otherwise type 'no': \n").lower()
         if again == 'yes' or again == 'no':
             break
         else:
