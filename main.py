@@ -49,7 +49,6 @@ while(again=='yes'):
             break
         else:
             print("Invalid input. Please type 'yes' or 'no': ")
-print('hi')
 
 
 
